@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const Personal = () => {
   return (
     <div>
-      <div className="min-h-screen bg-slate-950 text-cyan-100 pt-40 px-12 sm:px-24 md:px-36 lg:px-60 font-[Poppins]  text-sm">
+      <div className="min-h-screen bg-slate-950 text-cyan-100 pt-40 px-10 sm:px-24 md:px-28 lg:px-40 xl:px-52 font-[Poppins]  text-sm">
         <h1 className="text-3xl font-semibold text-cyan-500">
           Personal Background
         </h1>

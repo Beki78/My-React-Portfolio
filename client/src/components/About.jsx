@@ -11,15 +11,12 @@ import Footer from "./Footer";
 const About = () => {
   return (
     <div>
-      <div className="bg-slate-950 min-h-screen flex items-center flex-col lg:flex-row gap-7 md:gap-20 px-5 sm:px-16 md:px-32 lg:px-52 font-[Poppins] pb-14">
+      <div className="bg-slate-950 min-h-screen flex items-center flex-col lg:flex-row gap-7 md:gap-14 px-5 sm:px-16 md:px-32 lg:px-20 xl:px-52 font-[Poppins] pb-14">
         <div >
-          <img
-            src={Photo}
-            className="w-48 lg:w-[90rem] rounded-lg shadow-lg shadow-cyan-800 "
-          />
+          <div className="blob"></div>
         </div>
         <div>
-          <p className="text-cyan-400 text-xs sm:text-[1rem] leading-6">
+          <p className="text-cyan-400 text-[.8rem] sm:text-[1rem] leading-6">
             Hi, I'm Bereket, a passionate full stack developer from Ethiopia. I
             can build dynamic and responsive web applications using MERN stack.
             Driven by curiosity and dedication, I am self-taught, and I like to

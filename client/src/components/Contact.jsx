@@ -32,11 +32,11 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className="pt-32 pb-12 bg-slate-950 text-cyan-100 px-12 sm:px-12 md:px-14 lg:px-24 min-h-screen font-[Poppins]">
+      <div className="pt-32 pb-12 bg-slate-950 text-cyan-100 px-8 sm:px-12 md:px-14 lg:px-24 min-h-screen font-[Poppins]">
         <h1 className="text-3xl font-semibold text-cyan-600 text-center pb-5">
           Contact Me
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-12 items-center justify-center pt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7  items-center justify-center pt-16">
           <div className="flex flex-col gap-y-2">
             <Link
               to="https://www.google.com/maps/place/Figa+traffic+lights/@9.0122192,38.8361614,19z/data=!4m6!3m5!1s0x164b9b6bb694e687:0xbf157fcbf89cf4e0!8m2!3d9.0124642!4d38.8369874!16s%2Fg%2F11pcm03kl6?entry=ttu"
