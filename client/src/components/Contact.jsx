@@ -28,16 +28,16 @@ const Contact = () => {
            console.log("FAILED...", error.text);
          }
        );
-   };
+   }; 
   return (
     <div>
       <Navbar />
-      <div className="pt-32 pb-12 bg-slate-950 text-cyan-100 px-8 sm:px-12 md:px-14 lg:px-24 min-h-screen font-[Poppins]">
+      <div className="pt-32 pb-12 bg-slate-950 text-cyan-100 xl:px-40 px:8 sm:px-12 md:px-14 lg:px-32  min-h-screen font-[Poppins]">
         <h1 className="text-3xl font-semibold text-cyan-600 text-center pb-5">
           Contact Me
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-7  items-center justify-center pt-16">
-          <div className="flex flex-col gap-y-2">
+        <div className="grid grid-cols-1 md:grid-cols-2   items-center justify-center pt-16">
+          <div className="flex flex-col gap-y-3">
             <Link
               to="https://www.google.com/maps/place/Figa+traffic+lights/@9.0122192,38.8361614,19z/data=!4m6!3m5!1s0x164b9b6bb694e687:0xbf157fcbf89cf4e0!8m2!3d9.0124642!4d38.8369874!16s%2Fg%2F11pcm03kl6?entry=ttu"
               className="flex items-center gap-2"
@@ -58,7 +58,7 @@ const Contact = () => {
             </Link>
 
             <hr className="border-[1/4px] my-7 mr-32 border-cyan-300  hover:text-cyan-500" />
-            <div className="text-2xl text-cyan-500 flex gap-12 justify-start mt-12 ">
+            <div className="text-2xl text-cyan-500 flex gap-12 justify-start  ">
               <Link to="https://www.linkedin.com/in/bereketgetachew/">
                 <FaLinkedin className="border-cyan-300  hover:text-cyan-700  duration-100 ease-in" />
               </Link>
@@ -70,7 +70,7 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col">
+          <form ref={form} onSubmit={sendEmail} className="flex  flex-col">
             <label htmlFor="email" className="text-cyan-400 text-md">
               Your name
             </label>
@@ -96,7 +96,7 @@ const Contact = () => {
               name="message"
               id="message"
               cols="30"
-              rows="10"
+              rows="8"
               className="bg-slate-900 rounded-lg p-3 text-sm focus:ring-2 focus:ring-inset focus:ring-cyan-600 outline-none  mb-5"
               placeholder="Your message..."
               required

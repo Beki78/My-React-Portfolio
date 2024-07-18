@@ -18,15 +18,15 @@ const Skills = () => {
   const technical = [
     {
       language: "React",
-      Percentage: 85,
+      Percentage: 82,
     },
     {
       language: "Tailwind CSS",
-      Percentage: 92,
+      Percentage: 85,
     },
     {
       language: "MongoDB",
-      Percentage: 84,
+      Percentage: 81,
     },
     {
       language: "Express Js",
@@ -34,7 +34,7 @@ const Skills = () => {
     },
     {
       language: "Python",
-      Percentage: 78,
+      Percentage: 75,
     },
     {
       language: "C#",
@@ -42,19 +42,19 @@ const Skills = () => {
     },
     {
       language: "Typescript",
-      Percentage: 74,
+      Percentage: 72,
     },
     {
       language: "Git",
-      Percentage: 75,
+      Percentage: 73,
     },
     {
       language: "Shell",
-      Percentage: 56,
+      Percentage: 67,
     },
     {
       language: "React Native",
-      Percentage: 64,
+      Percentage: 74,
     },
   ];
   const soft = [
@@ -78,6 +78,7 @@ const Skills = () => {
           Certeficates
         </h1>
         <Link
+          target="_blank"
           className="text-sm text-blue-600 underline "
           to="https://www.coursera.org/account/accomplishments/specialization/YZGQ5LEZBURU"
         >
@@ -85,6 +86,7 @@ const Skills = () => {
         </Link>
         <br />
         <Link
+          target="_blank"
           className="text-sm text-blue-600 underline"
           to="https://intranet.alxswe.com/certificates/32SBFerxmh"
         >
@@ -92,6 +94,7 @@ const Skills = () => {
           <br />
         </Link>
         <Link
+          target="_blank"
           className="text-sm text-blue-600 underline"
           to="https://www.coursera.org/account/accomplishments/verify/6JT7MW3KFRVM"
         >
@@ -99,10 +102,20 @@ const Skills = () => {
         </Link>
         <br />
         <Link
+          target="_blank"
           className="text-sm text-blue-600 underline"
           to="https://www.sololearn.com/certificates/CC-SVMOQESC"
         >
           Introduction to C#
+        </Link>
+        <br />
+
+        <Link
+          target="_blank"
+          className="text-sm text-blue-600 underline"
+          to="https://intranet.alxswe.com/certificates/exG8rJTE2m?utm_campaign=VEN%20-2024Q1%20-%20Founders%20Academy%20C1&utm_medium=email&_hsenc=p2ANqtz-9h1Jk0lWjEzmhrbankm1f5OGCYn8M8LqJLCaMIOp_B4LiezKYjEuWhT7DL4LnEGhtj5vSYkIt24hcFixI-_tk8-ku7TQ&_hsmi=91097812&utm_content=91097812&utm_source=hs_email"
+        >
+          Founders Academy
         </Link>
       </div>
       <hr className="border-[1/4px] my-7  border-cyan-800  hover:text-cyan-500" />

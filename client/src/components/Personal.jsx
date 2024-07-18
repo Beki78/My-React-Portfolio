@@ -14,10 +14,14 @@ const Personal = () => {
         </h1>
         <p className="pt-3 text-sm">
           Hi, I'm Bereket Getachew, a junior full stack developer from Addis
-          Ababa, Ethiopia. I completed my high school education at Kidane Mihret
-          School, where the emphasis on discipline and a strong educational
-          foundation shaped my approach to learning and personal growth, and
-          currently I learning backend at ALX.
+          Ababa, Ethiopia. I went to Kidane Mihret School for high school, where
+          I learned the value of discipline and got a solid educational
+          foundation. Right now, I'm learning backend development at ALX. I've
+          also completed two programs: AICE and Venture. AICE taught me how to
+          use AI in my everyday life and explore different AI technologies. The
+          Venture program gave me a lot of insights into entrepreneurship, like
+          running a business, solving real-world problems, and networking with
+          people from various industries.
         </p>
         <h1 className="text-3xl font-semibold text-cyan-500 mt-6">
           Self-Learning Journey
@@ -33,7 +37,6 @@ const Personal = () => {
           <Skills />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

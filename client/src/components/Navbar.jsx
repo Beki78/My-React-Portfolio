@@ -1,10 +1,8 @@
-
-
-
 import React, { useState } from "react";
 import { Dialog, Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link, NavLink } from "react-router-dom";
+import { Link as RouterLink, NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import ButtonColor from "../components/ButtonColor";
 
 function classNames(...classes) {
@@ -22,9 +20,9 @@ const Navbar = () => {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <Link to="/" className="-m-1.5 p-1.5">
+            <RouterLink to="/" className="-m-1.5 p-1.5">
               <h1 className="text-xl font-bold uppercase">Bereket G.</h1>
-            </Link>
+            </RouterLink>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -41,37 +39,42 @@ const Navbar = () => {
             </button>
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
-            <NavLink
-              to="/"
-              className=" text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out"
-              activeClassName="active"
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out cursor-pointer"
             >
               Home
-            </NavLink>
-            <NavLink
-              to="/about"
-              className=" text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out"
-              activeClassName="active"
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out cursor-pointer"
             >
               About
-            </NavLink>
-            <NavLink
-              to="/services"
-              className=" text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out"
-              activeClassName="active"
+            </Link>
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out cursor-pointer"
             >
               Services
-            </NavLink>
-            <NavLink
-              to="/projects"
-              className=" text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out"
-              activeClassName="active"
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out cursor-pointer"
             >
               Projects
-            </NavLink>
+            </Link>
+           
           </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <ButtonColor />
+            <ButtonColor to = "contact" />
           </div>
         </nav>
         <Dialog
@@ -83,9 +86,9 @@ const Navbar = () => {
           <div className="fixed inset-0 z-10" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto shadow-cyan-50 shadow-sm bg-opacity-50 backdrop-blur-lg bg-slate-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <Link to="/" className="-m-1.5 p-1.5">
+              <RouterLink to="/" className="-m-1.5 p-1.5">
                 <h1 className="text-xl font-bold uppercase">Bereket G.</h1>
-              </Link>
+              </RouterLink>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -98,34 +101,51 @@ const Navbar = () => {
             <div className="mt-16 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6 text-center">
-                  <NavLink
-                    to="/"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900"
+                  <Link
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Home
-                  </NavLink>
-                  <NavLink
-                    to="/about"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900"
+                  </Link>
+                  <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     About
-                  </NavLink>
-                  <NavLink
-                    to="/projects"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900"
+                  </Link>
+                  <Link
+                    to="services"
+                    smooth={true}
+                    duration={500}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Services
+                  </Link>
+                  <Link
+                    to="projects"
+                    smooth={true}
+                    duration={500}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Projects
-                  </NavLink>
-                  <NavLink
-                    to="/contact"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900"
+                  </Link>
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Contact
-                  </NavLink>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -137,4 +157,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

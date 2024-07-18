@@ -73,7 +73,6 @@ const Card = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

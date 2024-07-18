@@ -1,23 +1,25 @@
-import React from 'react'
+import React from "react";
 import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
-import { Link } from 'react-router-dom';
+import { Link } from "react-scroll";
 
 
-const ButtonColor = () => {
+const ButtonColor = ({to}) => {
   return (
     <div className=" flex justify-center text-center">
-      <Link to='/contact'>
+      <Link to={to} smooth={true} duration={500} >
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
-          className="dark:bg-black bg-slate-950 text-cyan-500 dark:text-cyan-500 flex items-center space-x-2"
+          className="dark:bg-transparent bg-slate-950 text-cyan-500 dark:text-cyan-500 flex items-center space-x-2"
         >
-          <span className='font-semibold hover:text-cyan-400 duration-200 ease-in-out'>Contact Me</span>
+          <span className="font-semibold hover:text-cyan-200 duration-200 ease-in-out">
+            Contact Me
+          </span>
         </HoverBorderGradient>
       </Link>
     </div>
   );
-}
+};
 const AceternityLogo = () => {
   return (
     <svg
@@ -39,4 +41,4 @@ const AceternityLogo = () => {
   );
 };
 
-export default ButtonColor
+export default ButtonColor;
