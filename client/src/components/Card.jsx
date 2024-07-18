@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Photo1 from "../assets/Screenshot 2024-05-22 103326.png";
 import Photo2 from "../assets/Screenshot 2024-06-14 232015.png";
+import Photo3 from "../assets/Screenshot 2024-07-19 001251.png";
 import Footer from "../components/Footer";
 
 const Card = () => {
@@ -21,6 +22,14 @@ const Card = () => {
       photo: Photo2,
       github: "https://github.com/Beki78/Begize-Landing-page",
       live: "https://666c9f1da29f4eb9477ed74b--begizelandingpage1.netlify.app/",
+    },
+    {
+      title: "KMS School Web",
+      stack: "full stack",
+      desc: "This is a web for school to get a administration easily and show case their school made using tailwind CSS for styling and reactJs. and express js with mongoDB from the server",
+      photo: Photo3,
+      github: "https://github.com/Beki78/school-app",
+      live: "https://kidanemihretschool.netlify.app/",
     },
   ];
 
@@ -51,18 +60,18 @@ const Card = () => {
                   </span>
                 </h1>
                 <hr className="border-[1/2px] my-2 border-cyan-300  hover:text-cyan-700" />
-                <p className="text-[12px] md:text-sm">
-                  {item.desc}
-                </p>
+                <p className="text-[12px] md:text-sm">{item.desc}</p>
               </div>
               <div className="text-sm flex gap-4 text-center py-2">
                 <Link
+                  target="_blank"
                   to={item.github}
                   className="w-full bg-slate-800 hover:bg-slate-700 duration-200 ease-in-out py-1 rounded-md border-[1px] border-cyan-700 font-semibold"
                 >
                   GitHub
                 </Link>
                 <Link
+                  target="_blank"
                   to={item.live}
                   className="w-full bg-slate-800 hover:bg-slate-700 duration-200 ease-in-out py-1 rounded-md border-[1px] border-cyan-700 font-semibold"
                 >
