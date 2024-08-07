@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import Photo1 from "../assets/Screenshot 2024-05-22 103326.png";
 import Photo2 from "../assets/Screenshot 2024-06-14 232015.png";
 import Photo3 from "../assets/Screenshot 2024-07-19 001251.png";
+import Photo4 from "../assets/image.png"
 import Footer from "../components/Footer";
+import Photot5 from "../assets/calculator.png"
+import Photot6 from "../assets/unitcal.png"
+import Photot7 from "../assets/stopwatch.png"
 
 const Card = () => {
   const data = [
@@ -24,12 +28,44 @@ const Card = () => {
       live: "https://666c9f1da29f4eb9477ed74b--begizelandingpage1.netlify.app/",
     },
     {
+      title: "URL Shortener",
+      stack: "Full Stack",
+      desc: "A URL shortener application that enables users to convert long URLs into shorter links, featuring a React frontend with Tailwind CSS and express for the backend MongoDB for data storage",
+      photo: Photo4,
+      github: "https://github.com/Beki78/short-url",
+      live: "https://myurlshorten.netlify.app/",
+    },
+    {
       title: "KMS School Web",
-      stack: "full stack",
+      stack: "Frontend",
       desc: "This is a web for school to get a administration easily and show case their school made using tailwind CSS for styling and reactJs. and express js with mongoDB from the server",
       photo: Photo3,
       github: "https://github.com/Beki78/school-app",
       live: "https://kidanemihretschool.netlify.app/",
+    },
+    {
+      title: "Calculator",
+      stack: "Frontend",
+      desc: "This is a simple web calculator made with vanilla CSS for styling, html vanilla js for the logic",
+      photo: Photot5,
+      github: "https://github.com/Beki78/js-projects",
+      live: "https://beki78.github.io/js-projects/calculator%20js/",
+    },
+    {
+      title: "Stop Watch",
+      stack: "Frontend",
+      desc: "This is a simple unit stopwatch made with vanilla CSS for styling, html vanilla js for the logic",
+      photo: Photot7,
+      github: "https://github.com/Beki78/js-projects",
+      live: "https://beki78.github.io/js-projects/timer%20js/",
+    },
+    {
+      title: "Unit Convertor",
+      stack: "Frontend",
+      desc: "This is a simple unit convertor made with vanilla CSS for styling, html vanilla js for the logic",
+      photo: Photot6,
+      github: "https://github.com/Beki78/calculator",
+      live: "https://beki78.github.io/calculator/",
     },
   ];
 
@@ -56,7 +92,7 @@ const Card = () => {
                 <h1 className="py-2 text-cyan-500 text-lg font-bold">
                   {item.title}
                   <span className="text-[12px] md:text-sm text-cyan-200 font-light">
-                    - {item.stack}
+                   {" "} - {item.stack}
                   </span>
                 </h1>
                 <hr className="border-[1/2px] my-2 border-cyan-300  hover:text-cyan-700" />

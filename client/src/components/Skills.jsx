@@ -117,6 +117,15 @@ const Skills = () => {
         >
           Founders Academy
         </Link>
+        <br />
+
+        <Link
+          target="_blank"
+          className="text-sm text-blue-600 underline"
+          to="https://www.udemy.com/certificate/UC-1fb517b9-85b3-4feb-a4ac-c6a2a3c3b703/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+        >
+          MySQL
+        </Link>
       </div>
       <hr className="border-[1/4px] my-7  border-cyan-800  hover:text-cyan-500" />
 
