@@ -1,8 +1,8 @@
-import React from "react";
 import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
 import { Link } from "react-scroll";
 
 
+// eslint-disable-next-line react/prop-types
 const ButtonColor = ({to}) => {
   return (
     <div className=" flex justify-center text-center">
@@ -20,6 +20,7 @@ const ButtonColor = ({to}) => {
     </div>
   );
 };
+// eslint-disable-next-line no-unused-vars
 const AceternityLogo = () => {
   return (
     <svg

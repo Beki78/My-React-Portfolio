@@ -1,4 +1,5 @@
 import React from "react";
+import footerGrid from "/src/public/footer-grid.svg";
 
 const techs = [
   { name: "HTML", icon: "https://skillicons.dev/icons?i=html" },
@@ -29,7 +30,7 @@ const TooltipIcon = ({ name, icon }) => {
         alt={`${name} Icon`}
         className="w-20 h-20 sm:24 sm:h-24 cursor-pointer transition-transform transform group-hover:-translate-y-1"
       />
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-1 w-max hidden group-hover:block bg-gray-800 text-white text-md rounded p-2 transition-opacity duration-200 ease-in-out">
+      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full  w-max hidden group-hover:block bg-gray-800 text-white text-md rounded p-2 transition-opacity duration-200 ease-in-out">
         {name}
       </div>
     </div>
@@ -38,13 +39,18 @@ const TooltipIcon = ({ name, icon }) => {
 
 const TechIcons = () => {
   return (
-    <div className="grid lg:mx-32 grid-cols-4 md:grid-cols-5 justify-items-center items-center h-96 mt-32 gap-y-16">
+    <div className="relative grid lg:px-52 grid-cols-4 md:grid-cols-5 justify-items-center items-center h-96 mt-32 gap-y-10">
+      <div className="w-full absolute  min-h-96">
+        <img
+          src={footerGrid}
+          alt="grid"
+          className="w-full h-full opacity-70 "
+        />
+      </div>
       {techs.map((tech) => (
         <TooltipIcon key={tech.name} name={tech.name} icon={tech.icon} />
       ))}
     </div>
-
-    
   );
 };
 

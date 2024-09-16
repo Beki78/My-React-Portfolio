@@ -1,50 +1,61 @@
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaTelegram } from "react-icons/fa6";
-import { CiShare1 } from "react-icons/ci";
-import { Link } from "react-scroll";
 import React from "react";
+import { Link } from "react-scroll";
+
+const skillIcons = [
+  {
+    href: "https://www.linkedin.com/in/bereketgetachew/",
+    img: "https://skillicons.dev/icons?i=linkedin",
+    alt: "LinkedIn",
+    target: "_blank",
+  },
+  {
+    href: "https://github.com/Beki78/",
+    img: "https://skillicons.dev/icons?i=github",
+    alt: "GitHub",
+    target: "_blank",
+  },
+  {
+    href: "mailto:your.bakiget78@gmail.com",
+    img: "https://skillicons.dev/icons?i=gmail",
+    alt: "Email",
+    target: "_blank",
+  },
+  
+];
 
 const About = () => {
   return (
     <div>
-      <div className="bg-slate-950 min-h-screen flex items-center flex-col lg:flex-row gap-7 md:gap-14 px-5 sm:px-16 md:px-32 lg:px-20 xl:px-64 font-[Poppins] pb-14">
+      <div className="bg-slate-950 flex items-center flex-col lg:flex-row gap-7 md:gap-14 px-5 sm:px-16 md:px-32 lg:px-20 xl:px-80 font-[Poppins] pb-14">
         <div>
           <div className="blob"></div>
         </div>
         <div>
           <p className="text-white text-[.9rem] sm:text-[.9rem] leading-6">
-            Hi, I&apos;m Bereket, a passionate full stack developer from Ethiopia. I
-            can build dynamic and responsive web applications using MERN stack.
-            Driven by curiosity and dedication. I like to
-            update my self to the latest technology. I&apos;m eager to contribute to
+            Hi, I&apos;m Bereket, a passionate full stack developer from
+            Ethiopia. I can build dynamic and responsive web applications using
+            the MERN stack. Driven by curiosity and dedication, I like to update
+            myself with the latest technology. I&apos;m eager to contribute to
             innovative projects and collaborate with like-minded professionals
             to create impactful digital solutions. Welcome to my portfolio!
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              className="text-purple-400 font-semibold cursor-pointer"
-            >
-              &nbsp; More about me
-              <CiShare1 className="inline text-lg" />
-            </Link>
           </p>
-          <hr className="border-[1/4px] my-7 mx-6 border-purple-300  " />
-          <div className="text-2xl text-purple-500 flex gap-12 justify-center mt-12  ">
-            <a target="_blank" href="https://www.linkedin.com/in/bereketgetachew/">
-              <FaLinkedin className="border-purple-300  hover:text-purple-200  duration-100 ease-in cursor-pointer" />
-            </a>
-            <a target="_blank" href="https://github.com/Beki78/">
-              <FaGithub className="border-purple-300  hover:text-purple-200  duration-100 ease-in cursor-pointer" />
-            </a>
-            <a target="_blank" href="mailto:your.bakiget78@gmail.com">
-              <MdEmail className="border-purple-300  hover:text-purple-200  duration-100 ease-in cursor-pointer" />
-            </a>
-            <a target="_blank" href="https://t.me/BGM78BB">
-              <FaTelegram className="border-purple-300  hover:text-purple-200  duration-100 ease-in cursor-pointer" />
-            </a>
+          <hr className="border-[1/4px] my-7  border-purple-300" />
+          <div className="text-2xl text-purple-500 flex gap-12 justify-center mt-12">
+            {skillIcons.map(({ href, img, alt, target }, index) => (
+              <a
+                key={index}
+                href={href}
+                target={target}
+                rel="noopener noreferrer"
+                className="text-2xl"
+              >
+                <img
+                  src={img}
+                  alt={alt}
+                  className="h-8 w-8 border-purple-300 hover:-translate-y-1 hover:text-purple-200 duration-300 ease-in-out cursor-pointer"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
