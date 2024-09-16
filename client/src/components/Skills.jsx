@@ -1,18 +1,7 @@
-import React from "react";
-import { FaReact } from "react-icons/fa6";
-import { SiTailwindcss } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { TbBrandCSharp } from "react-icons/tb";
-import { FaGit } from "react-icons/fa";
-import { GiArchiveResearch } from "react-icons/gi";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { MdManageAccounts } from "react-icons/md";
+
 import { Link } from "react-router-dom";
-import { TbBrandPowershell } from "react-icons/tb";
-import { TbBrandReactNative } from "react-icons/tb";
+import TooltipIcon from "./Icons";
+
 
 const Skills = () => {
   const technical = [
@@ -74,8 +63,8 @@ const Skills = () => {
   return (
     <div>
       <div>
-        <h1 className="text-3xl font-semibold text-cyan-500 py-10">
-          Certeficates
+        <h1 className="text-4xl font-semibold text-white py-10 mt-32">
+          My <span className="text-purple-500">Certificates</span>
         </h1>
         <Link
           target="_blank"
@@ -109,7 +98,6 @@ const Skills = () => {
           Introduction to C#
         </Link>
         <br />
-
         <Link
           target="_blank"
           className="text-sm text-blue-600 underline"
@@ -118,75 +106,30 @@ const Skills = () => {
           Founders Academy
         </Link>
         <br />
-
         <Link
           target="_blank"
           className="text-sm text-blue-600 underline"
           to="https://www.udemy.com/certificate/UC-1fb517b9-85b3-4feb-a4ac-c6a2a3c3b703/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
         >
           MySQL
+        </Link>{" "}
+        <br />
+        <Link
+          target="_blank"
+          className="text-sm text-blue-600 underline"
+          to="https://www.udacity.com/certificate/e/d9749eac-4a8a-11ef-9498-033812d4d913"
+        >
+          Programming Fandamentals
         </Link>
       </div>
       <hr className="border-[1/4px] my-7  border-cyan-800  hover:text-cyan-500" />
 
       <div>
-        <h1 className="text-3xl font-semibold text-cyan-500">
-          My technical skills
+        <h1 className="text-4xl pt-12  font-semibold text-white">
+          My <span className="text-purple-500">Skills</span>
         </h1>
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-x-20 md:gap-y-5 py-10">
-          {technical.map((data, index) => (
-            <div key={index}>
-              <div className="flex justify-between items-center">
-                <h6>{data.language} </h6>
-                <h6 className="text-sm text-cyan-200">{data.Percentage}%</h6>
-              </div>
-              <div className="w-full h-1 bg-slate-500 rounded-md">
-                <div
-                  className="h-1 bg-cyan-600 rounded-md"
-                  style={{ width: `${data.Percentage}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className=" flex gap-2 md:gap-7 lg:gap-12 justify-center items-center text-2xl ">
-          <FaReact className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <SiTailwindcss className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <SiExpress className=" text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <SiMongodb className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <SiTypescript className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <FaPython className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <FaGit className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <TbBrandCSharp className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <TbBrandPowershell className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <TbBrandReactNative className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-        </div>
-      </div>
-      <hr className="border-[1/4px] my-7  border-cyan-800  hover:text-cyan-500" />
 
-      <div className="pt-12">
-        <h1 className="text-3xl font-semibold text-cyan-500">My soft skills</h1>
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-x-20 md:gap-y-5 py-10">
-          {soft.map((data, index) => (
-            <div>
-              <div className="flex justify-between items-center">
-                <h6>{data.softskill} </h6>
-                <h6 className="text-sm text-cyan-200">{data.Percentage}%</h6>
-              </div>
-              <div className="w-full h-1 bg-slate-500 rounded-md">
-                <div
-                  className="h-1 bg-cyan-600 rounded-md"
-                  style={{ width: `${data.Percentage}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className=" flex gap-6 md:gap-12 justify-center items-center text-2xl pb-12">
-          <GiArchiveResearch className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <FaPeopleGroup className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-          <MdManageAccounts className="text-cyan-400 hover:text-cyan-100 duration-150 ease-in-out hover:scale-110" />
-        </div>
+        <TooltipIcon />
       </div>
     </div>
   );

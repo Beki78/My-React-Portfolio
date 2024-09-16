@@ -6,14 +6,14 @@ import { Link } from "react-scroll";
 const ButtonColor = ({to}) => {
   return (
     <div className=" flex justify-center text-center">
-      <Link to={to} smooth={true} duration={500} >
+      <Link to={to} smooth={true} duration={500}>
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
-          className="dark:bg-transparent bg-slate-950 text-cyan-500 dark:text-cyan-500 flex items-center space-x-2"
+          className="dark:bg-transparent duration-500 ease-in-out  bg-slate-950 text-purple-300  flex items-center space-x-2"
         >
-          <span className="font-semibold hover:text-cyan-200 duration-200 ease-in-out">
-            Contact Me
+          <span className="font-semibold hover:text-white duration-200 ease-in-out ">
+            Contact Me 👨‍💻
           </span>
         </HoverBorderGradient>
       </Link>

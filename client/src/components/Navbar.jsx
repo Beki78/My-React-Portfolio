@@ -14,14 +14,14 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="bg-slate-950 text-cyan-100 fixed z-50 w-screen bg-opacity-40 backdrop-blur-md ">
+      <header className="bg-slate-950 text-cyan-100 fixed z-[1000] w-screen bg-opacity-40 backdrop-blur-md ">
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between p-6 px-12 lg:px-20"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
             <RouterLink to="/" className="-m-1.5 p-1.5">
-              <h1 className="text-xl font-bold uppercase">Bereket G.</h1>
+              <h1 className="text-xl font-bold uppercase text-purple-200">Bereket G.</h1>
             </RouterLink>
           </div>
           <div className="flex lg:hidden">
@@ -43,7 +43,7 @@ const Navbar = () => {
               to="home"
               smooth={true}
               duration={500}
-              className="text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out cursor-pointer"
+              className="text-md font-semibold leading-6 text-purple-400 hover:text-purple-200 duration-300 ease-in-out cursor-pointer"
             >
               Home
             </Link>
@@ -51,23 +51,23 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out cursor-pointer"
+              className="text-md font-semibold leading-6 text-purple-400 hover:text-purple-200 duration-300 ease-in-out cursor-pointer"
             >
               About
             </Link>
             <Link
               to="services"
               smooth={true}
-              duration={500}
-              className="text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out cursor-pointer"
+              duration={400}
+              className="text-md font-semibold leading-6 text-purple-400 hover:text-purple-200 duration-300 ease-in-out cursor-pointer"
             >
               Services
             </Link>
             <Link
               to="projects"
               smooth={true}
-              duration={500}
-              className="text-md font-semibold leading-6 text-cyan-400 hover:text-cyan-100 duration-300 ease-in-out cursor-pointer"
+              duration={400}
+              className="text-md font-semibold leading-6 text-purple-400 hover:text-purple-200 duration-300 ease-in-out cursor-pointer"
             >
               Projects
             </Link>

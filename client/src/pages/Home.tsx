@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link, Element } from "react-scroll";
-import Navbar from "../components/Navbar";
-import HeroWord from "../components/HeroWord";
-import { BackgroundBeams } from "../components/ui/background-beams";
-import About from "../components/About";
-import AboutPage from "../pages/AboutPage";
-import Services from "../pages/ServicesPage";
-import Contact from "../pages/ContactPage";
-import Project from "../pages/ProjectsPage";
-import { PuffLoader
- } from "react-spinners";
+import { Element } from "react-scroll";
+import Navbar from "../components/Navbar.jsx";
+import HeroWord from "../components/HeroWord.jsx";
+import { BackgroundBeams } from "../components/ui/background-beams.tsx";
+import About from "../components/About.tsx";
+import AboutPage from "./AboutPage.jsx";
+import Services from "./ServicesPage.jsx";
+import Contact from "./ContactPage.jsx";
+import Project from "./ProjectsPage.jsx";
+import { PuffLoader } from "react-spinners";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -44,8 +43,7 @@ const Home = () => {
             fadeOut ? "opacity-90" : "opacity-100"
           }`}
         >
-          <PuffLoader
- size={100} color={"#22d3ee"} />
+          <PuffLoader size={100} color={"#A855F7"} />
         </div>
       ) : (
         <>

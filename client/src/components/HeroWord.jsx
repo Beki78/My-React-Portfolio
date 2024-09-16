@@ -1,4 +1,3 @@
-import React from 'react'
 import { FlipWords } from "../components/ui/flip-words";
 
 const HeroWord = () => {
@@ -6,7 +5,7 @@ const HeroWord = () => {
   return (
     <div>
       <div className="h-[40rem] flex justify-center items-center px-4">
-        <div className="text-2xl md:text-4xl  mx-auto text-cyan-600 dark:text-neutral-400 font-semibold ">
+        <div className="text-2xl md:text-4xl  mx-auto text-neutral-100 font-semibold ">
           {/* <h1 className="font-light text-cyan-300 text-3xl md:text-6xl py-9 text-center">
             <span>I am</span> <br /><span>Bereket Getachew 💻</span>
           </h1> */}

@@ -4,6 +4,11 @@ import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColo
 import svgToDataUri from "mini-svg-data-uri";
 
 
+
+
+
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{ts,tsx}"],
