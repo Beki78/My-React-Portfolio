@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
 import NavBar from "../components/Navbar"
-import { dataFront, dataMob } from '../data/data';
+import {  dataAll } from "../data/data";
 import { PinContainer } from '../components/ui/3d-pin';
-import { MyContext } from '../context/state';
+import { MyContext } from "../context/state";
+import Footer from "../components/Footer"
 
 const Project = () => {
   const {handleModal} = useContext(MyContext)
@@ -12,13 +13,13 @@ const Project = () => {
       <div className="bg-slate-950 ">
         <h1
           data-aos="fade-up"
-          className="text-4xl md:text-5xl font-semibold text-white  mt-18 text-center pt-32"
+          className="text-4xl md:text-5xl font-semibold text-white  mt-18 text-center pt-32  pb-12"
         >
           All <span className="text-purple-500">Projects</span>
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 lg:px-10 xl:px-0 2xl:px-32">
-          {dataFront.map((item, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 lg:px-10 xl:px-32 2xl:px-48 ">
+          {dataAll.map((item, index) => (
             <PinContainer
               key={index}
               title={item.title}
@@ -71,6 +72,7 @@ const Project = () => {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

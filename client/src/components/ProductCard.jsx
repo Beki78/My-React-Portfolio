@@ -12,7 +12,7 @@ export const AnimatedPinDemoFront = () => {
   
   return (
     <div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-20 py-12 w-full lg:px-10 xl:px-0 2xl:px-32 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-20 py-12 w-full lg:px-10 xl:px-32 2xl:px-48 ">
         {dataFront.map((item, index) => (
           <PinContainer
             key={index}
@@ -69,7 +69,7 @@ export const AnimatedPinDemoFull = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 lg:px-10 xl:px-0 2xl:px-32 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 lg:px-10 xl:px-32 2xl:px-48 ">
         {dataFull.map((item, index) => (
           <PinContainer
             key={index}
@@ -126,7 +126,7 @@ export const AnimatedPinDemoMob = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 lg:px-10 xl:px-0 2xl:px-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 lg:px-10 xl:px-32 2xl:px-48">
         {dataMob.map((item, index) => (
           <PinContainer
             key={index}
