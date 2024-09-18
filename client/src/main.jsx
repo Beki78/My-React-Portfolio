@@ -7,6 +7,7 @@ import ErrorPage from "./pages/ErrorPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Project from "./pages/Project.tsx";
+import {MyProvider} from "./context/state.jsx"
 
 AOS.init({
   duration: 1000,
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <MyProvider>
+      <RouterProvider router={router} />
+    </MyProvider>
   </React.StrictMode>
 );

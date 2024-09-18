@@ -9,12 +9,14 @@ export const PinContainer = ({
   title,
   href,
   className,
+  onClick,
   containerClassName,
 }: {
   children: React.ReactNode;
   title?: string;
   href?: string;
   className?: string;
+  onClick: any;
   containerClassName?: string;
 }) => {
   const [transform, setTransform] = useState(
@@ -37,6 +39,7 @@ export const PinContainer = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       to={href || "/"}
+      onClick={onClick}
     >
       <div
         style={{

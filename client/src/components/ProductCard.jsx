@@ -2,15 +2,23 @@
 import { PinContainer } from "./ui/3d-pin";
 import { Tabs } from "../components/ui/tabs";
 import { dataFront, dataFull, dataMob } from "../data/data";
-import ButtonColor from "./ButtonColor"
+import ButtonColor from "./ButtonColor";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { MyContext } from "../context/state.jsx";
 
 export const AnimatedPinDemoFront = () => {
+  const {  handleModal } = useContext(MyContext);
+  
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-20 py-12 w-full lg:px-10 xl:px-0 2xl:px-32 ">
         {dataFront.map((item, index) => (
-          <PinContainer key={index} title={item.title} href={item.live}>
+          <PinContainer
+            key={index}
+            title={item.title}
+            onClick={() => handleModal(item)}
+          >
             <div className="flex basis-full flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-full">
               <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
                 <img
@@ -47,7 +55,6 @@ export const AnimatedPinDemoFront = () => {
                       </div>
                     ))}
                   </div>
-                 
                 </div>
               </div>
             </div>
@@ -58,13 +65,17 @@ export const AnimatedPinDemoFront = () => {
   );
 };
 export const AnimatedPinDemoFull = () => {
-
+  const { handleModal } = useContext(MyContext);
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 lg:px-10 xl:px-0 2xl:px-32 ">
         {dataFull.map((item, index) => (
-          <PinContainer key={index} title={item.title} href={item.live}>
+          <PinContainer
+            key={index}
+            title={item.title}
+            onClick={() => handleModal(item)}
+          >
             <div className="flex basis-full flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
               <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
                 <img
@@ -101,7 +112,6 @@ export const AnimatedPinDemoFull = () => {
                       </div>
                     ))}
                   </div>
-                 
                 </div>
               </div>
             </div>
@@ -112,13 +122,17 @@ export const AnimatedPinDemoFull = () => {
   );
 };
 export const AnimatedPinDemoMob = () => {
-
+  const { handleModal } = useContext(MyContext);
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 py-12 lg:px-10 xl:px-0 2xl:px-32">
         {dataMob.map((item, index) => (
-          <PinContainer key={index} title={item.title} href={item.live}>
+          <PinContainer
+            key={index}
+            title={item.title}
+            onClick={() => handleModal(item)}
+          >
             <div className="flex basis-full flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
               <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
                 <img
@@ -155,7 +169,6 @@ export const AnimatedPinDemoMob = () => {
                       </div>
                     ))}
                   </div>
-                 
                 </div>
               </div>
             </div>
@@ -203,7 +216,7 @@ export function TabsDemo() {
       <Tabs tabs={tabs} />
       <div className="flex justify-center w-full py-7">
         <ButtonColor
-          name="View All Projects"
+          name=" &nbsp; &nbsp; View All Projects &nbsp; 🚀 &nbsp;  &nbsp;"
           func={() => navigate("/projects")}
         />
       </div>

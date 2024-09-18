@@ -1,11 +1,13 @@
 import footerGrid from "/src/public/footer-grid.svg";
 import ButtonColor from "./ButtonColor";
 import { socialMedia } from "../data/data";
+import { AnimatedModalDemo } from "./Modal";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full bg-slate-950 pt-28 pb-10" id="contact">
+    <footer className="relative w-full bg-slate-950 pt-96 pb-10" id="contact">
       {/* background grid */}
+      <AnimatedModalDemo/>
       <div className="w-full absolute left-0 bottom-0 min-h-96">
         <img
           src={footerGrid}
