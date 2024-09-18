@@ -1,22 +1,21 @@
 import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
-import { Link } from "react-scroll";
 
 
 // eslint-disable-next-line react/prop-types
-const ButtonColor = ({to}) => {
+const ButtonColor = ({ name, func}) => {
+ 
   return (
     <div className=" flex justify-center text-center">
-      <Link to={to} smooth={true} duration={500}>
         <HoverBorderGradient
+        onClick={func}
           containerClassName="rounded-full"
           as="button"
           className="dark:bg-transparent duration-500 ease-in-out  bg-slate-950 text-purple-300  flex items-center space-x-2"
         >
           <span className="font-semibold hover:text-white duration-200 ease-in-out ">
-            Contact Me 👨‍💻
+            {name}
           </span>
         </HoverBorderGradient>
-      </Link>
     </div>
   );
 };

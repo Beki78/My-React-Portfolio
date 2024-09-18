@@ -1,16 +1,14 @@
-import React from "react";
-import { Timeline } from "../components/ui/timeline";
-import proj1 from "../assets/Screenshot from 2024-09-15 14-17-15.png"
-import proj2 from "../assets/Screenshot from 2024-09-15 15-11-56.png"
+import { Timeline } from "./ui/timeline";
+import proj1 from "../assets/Screenshot from 2024-09-15 14-17-15.png";
+import proj2 from "../assets/Screenshot from 2024-09-15 15-11-56.png";
 
-
-export default Path => {
+const Path = () => {
   const data = [
     {
       title: "Early 2023",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-base font-normal mb-8">
             I began my programming journey by building small, foundational
             projects using HTML and CSS. This helped me grasp the basics of web
             development and kickstarted my passion for coding.
@@ -21,6 +19,7 @@ export default Path => {
               alt="startup template"
               width={500}
               height={500}
+              data-aos="fade-up"
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
@@ -28,6 +27,7 @@ export default Path => {
               alt="startup template"
               width={500}
               height={500}
+              data-aos="fade-up"
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
@@ -38,7 +38,7 @@ export default Path => {
       title: "Late 2023",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-base font-normal mb-8">
             I ventured into game development for a few months, exploring game
             mechanics and design. While I enjoyed it, I soon realized my focus
             was better suited to web and app development, which I find more
@@ -50,6 +50,7 @@ export default Path => {
               alt="hero template"
               width={500}
               height={500}
+              data-aos="fade-up"
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
@@ -57,6 +58,7 @@ export default Path => {
               alt="feature template"
               width={500}
               height={500}
+              data-aos="fade-up"
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
@@ -67,13 +69,13 @@ export default Path => {
       title: "2024",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-800 dark:text-neutral-200 text-base font-normal mb-4">
             I expanded my knowledge by diving into modern development tools like
             React, Tailwind CSS, JavaScript, TypeScript, Python, and Django.
             These tools have allowed me to build more complex and dynamic
             projects. Toward the end of 2024, I also started working on LeetCode
-            to sharpen my problem-solving skills, though I haven't focused on it
-            heavily yet.
+            to sharpen my problem-solving skills, though I haven&apos;t focused
+            on it heavily yet.
           </p>
 
           <div className="grid grid-cols-2 gap-4">
@@ -82,6 +84,7 @@ export default Path => {
               alt="hero template"
               width={500}
               height={500}
+              data-aos="fade-up"
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
@@ -89,9 +92,9 @@ export default Path => {
               alt="feature template"
               width={500}
               height={500}
+              data-aos="fade-up"  
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-            
           </div>
         </div>
       ),
@@ -102,4 +105,5 @@ export default Path => {
       <Timeline data={data} />
     </div>
   );
-}
+};
+export default Path;

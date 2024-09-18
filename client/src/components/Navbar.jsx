@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Dialog, Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link as RouterLink, NavLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import ButtonColor from "../components/ButtonColor";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,7 +24,7 @@ const Navbar = () => {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-cyan-400"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-purple-400"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Open main menu</span>
@@ -42,7 +39,7 @@ const Navbar = () => {
             <Link
               to="home"
               smooth={true}
-              duration={500}
+              duration={800}
               className="text-md font-semibold leading-6 text-purple-400 hover:text-purple-200 duration-300 ease-in-out cursor-pointer"
             >
               Home
@@ -50,7 +47,7 @@ const Navbar = () => {
             <Link
               to="about"
               smooth={true}
-              duration={500}
+              duration={800}
               className="text-md font-semibold leading-6 text-purple-400 hover:text-purple-200 duration-300 ease-in-out cursor-pointer"
             >
               About
@@ -74,7 +71,7 @@ const Navbar = () => {
            
           </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <ButtonColor to = "contact" />
+            <ButtonColor  name = "Contact Me 👨‍💻"  func={() => window.location.href = "mailto:bakiget78@gmail.com"}/>
           </div>
         </nav>
         <Dialog
@@ -99,13 +96,13 @@ const Navbar = () => {
               </button>
             </div>
             <div className="mt-16 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
+              <div className="-my-6 divide-y divide-gray-800/10">
                 <div className="space-y-2 py-6 text-center">
                   <Link
                     to="home"
                     smooth={true}
-                    duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
+                    duration={800}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-400 hover:bg-slate-900 cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Home
@@ -113,8 +110,8 @@ const Navbar = () => {
                   <Link
                     to="about"
                     smooth={true}
-                    duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
+                    duration={800}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-400 hover:bg-slate-900 cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     About
@@ -122,8 +119,8 @@ const Navbar = () => {
                   <Link
                     to="services"
                     smooth={true}
-                    duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
+                    duration={800}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-400 hover:bg-slate-900 cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Services
@@ -131,21 +128,13 @@ const Navbar = () => {
                   <Link
                     to="projects"
                     smooth={true}
-                    duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
+                    duration={800}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-400 hover:bg-slate-900 cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Projects
                   </Link>
-                  <Link
-                    to="contact"
-                    smooth={true}
-                    duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-cyan-400 hover:bg-slate-900 cursor-pointer"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Contact
-                  </Link>
+                  
                 </div>
               </div>
             </div>

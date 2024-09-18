@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from './pages/Home.tsx';
-import AboutPage from './pages/AboutPage';
-import ServicesPage from './pages/ServicesPage'
-import ProjectsPage from './pages/ProjectsPage'
-import ContactPages from './pages/ContactPage'
 import ErrorPage from './pages/ErrorPage';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1000,
+  once: false,
+});
 
 const router = createBrowserRouter([
   {
@@ -15,22 +18,9 @@ const router = createBrowserRouter([
     element: <Home />,
     errorElement: <ErrorPage/>
   },
-  {
-    path: "/about",
-    element: <AboutPage />,
-  },
-  {
-    path: "/services",
-    element: <ServicesPage/>
-  },
-  {
-    path: "/projects",
-    element: <ProjectsPage/>
-  },
-  {
-    path: "/contact",
-    element: <ContactPages/>
-  },
+ 
+  
+  
   
 ]);
 

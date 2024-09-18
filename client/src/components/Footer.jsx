@@ -1,6 +1,5 @@
-import { HoverBorderGradient } from "./ui/hover-border-gradient";
-import { Link } from "react-router-dom";
 import footerGrid from "/src/public/footer-grid.svg";
+import ButtonColor from "./ButtonColor";
 
 const socialMedia = [
   {
@@ -38,19 +37,12 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-          <div className=" flex justify-center  text-center">
-            <Link to="/">
-              <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                className="dark:bg-transparent duration-500 ease-in-out  bg-slate-950 text-purple-300  flex items-center space-x-2"
-              >
-                <span className="font-semibold hover:text-white duration-200 ease-in-out ">
-                  Contact Me 👨‍💻
-                </span>
-              </HoverBorderGradient>
-            </Link>
-          </div>
+        <div className=" flex justify-center  text-center">
+          <ButtonColor
+            name="Contact Me 👨‍💻"
+            func={() => (window.location.href = "mailto:bakiget78@gmail.com")}
+          />
+        </div>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center px-64  text-white">
         <p className="md:text-base text-sm md:font-normal font-light">

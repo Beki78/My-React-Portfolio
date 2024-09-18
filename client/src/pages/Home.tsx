@@ -4,11 +4,11 @@ import Navbar from "../components/Navbar.jsx";
 import HeroWord from "../components/HeroWord.jsx";
 import { BackgroundBeams } from "../components/ui/background-beams.tsx";
 import About from "../components/About.tsx";
-import AboutPage from "./AboutPage.jsx";
-import Services from "./ServicesPage.jsx";
-import Contact from "./ContactPage.jsx";
-import Project from "./ProjectsPage.jsx";
+import Card from "../components/Card.jsx";
 import { PuffLoader } from "react-spinners";
+import Personal from "../components/Personal.jsx";
+import Services from "../components/Services.jsx"
+import Footer from "../components/Footer.jsx"
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -18,7 +18,7 @@ const Home = () => {
     // Set a timer to start fade-out effect after 3 seconds
     const timer = setTimeout(() => {
       setFadeOut(true);
-    }, 4000);
+    }, 1000);
 
     // Clear the timer if the component is unmounted
     return () => clearTimeout(timer);
@@ -56,12 +56,12 @@ const Home = () => {
             </div>
           </Element>
 
-          <Element name="">
+          <Element name="about">
             <About />
           </Element>
 
-          <Element name="about">
-            <AboutPage />
+          <Element>
+            <Personal />
           </Element>
 
           <Element name="services">
@@ -69,11 +69,10 @@ const Home = () => {
           </Element>
 
           <Element name="projects">
-            <Project />
+            <Card />
           </Element>
-
-          <Element name="contact">
-            <Contact />
+          <Element name="footer">
+            <Footer />
           </Element>
         </>
       )}
