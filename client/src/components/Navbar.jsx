@@ -18,7 +18,9 @@ const Navbar = () => {
         >
           <div className="flex lg:flex-1">
             <RouterLink to="/" className="-m-1.5 p-1.5">
-              <h1 className="text-xl font-bold uppercase text-purple-200">Bereket G.</h1>
+              <h1 className="text-xl font-bold uppercase text-purple-200">
+                Bereket G.
+              </h1>
             </RouterLink>
           </div>
           <div className="flex lg:hidden">
@@ -68,10 +70,16 @@ const Navbar = () => {
             >
               Projects
             </Link>
-           
           </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <ButtonColor  name = "Contact Me 👨‍💻"  func={() => window.location.href = "mailto:bakiget78@gmail.com"}/>
+            <ButtonColor
+              name="&nbsp; &nbsp; Resume &nbsp; 📝 &nbsp; &nbsp;"
+              func={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1-Sb7WsDZhbxcFQ-Qeyrg5AQeaX2HxaKX/view?usp=sharing"
+                )
+              }
+            />
           </div>
         </nav>
         <Dialog
@@ -134,7 +142,6 @@ const Navbar = () => {
                   >
                     Projects
                   </Link>
-                  
                 </div>
               </div>
             </div>

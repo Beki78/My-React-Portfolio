@@ -33,6 +33,9 @@ export const Tabs = ({
     newTabs.unshift(selectedTab[0]);
     setTabs(newTabs);
     setActive(newTabs[0]);
+    console.log("sd");
+    
+    
   };
 
   const [hovering, setHovering] = useState(false);
@@ -41,7 +44,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row  mt-10 items-center justify-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row w-full mt-10 items-center justify-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full ",
           containerClassName
         )}
       > 
@@ -69,7 +72,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block text-black dark:text-white">
+            <span className="relative block  text-black dark:text-white">
               {tab.title}
             </span>
           </button>
@@ -90,6 +93,7 @@ export const FadeInDiv = ({
   className,
   tabs,
   hovering,
+  active
 }: {
   className?: string;
   key?: string;
@@ -98,28 +102,34 @@ export const FadeInDiv = ({
   hovering?: boolean;
 }) => {
   const isActive = (tab: Tab) => {
-    return tab.value === tabs[0].value;
+    return tab.value === active.value; // Assuming tabs[0] is the active one for now
   };
+
   return (
-    <div className="relative w-full h-[60rem] z-[999]">
-      {tabs.map((tab, idx) => (
-        <motion.div
-          key={tab.value}
-          layoutId={tab.value}
-          style={{
-            scale: 1 - idx * 0.1,
-            top: hovering ? idx * -50 : 0,
-            zIndex: -idx,
-            opacity: idx < 3 ? 1 - idx * 0.1 : 0,
-          }}
-          animate={{
-            y: isActive(tab) ? [0, 40, 0] : 0,
-          }}
-          className={cn("w-full h-full absolute top-0 left-0", className)}
-        >
-          {tab.content}
-        </motion.div>
-      ))}
+    <div className="relative w-full h-full z-[999]">
+      {tabs.map(
+        (tab, idx) =>
+          // Conditionally render only the active tab's content
+          isActive(tab) && (
+            <motion.div
+              key={tab.value}
+              layoutId={tab.value}
+              style={{
+                scale: 1 - idx * 0.1,
+                top: hovering ? idx * -50 : 0,
+                zIndex: -idx,
+                opacity: idx < 3 ? 1 - idx * 0.1 : 0,
+              }}
+              animate={{
+                y: isActive(tab) ? [0, 40, 0] : 0,
+              }}
+              className={cn("w-full h-full top-0 left-0", className)}
+            >
+              {tab.content}
+            </motion.div>
+          )
+      )}
     </div>
   );
 };
+

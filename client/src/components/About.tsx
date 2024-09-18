@@ -45,7 +45,6 @@ const About = () => {
             innovative projects and collaborate with like-minded professionals
             to create impactful digital solutions. Welcome to my portfolio!
           </p>
-          <hr className="border-[1/4px] my-7  border-purple-300" />
           <div className="text-2xl text-purple-500 flex gap-12 justify-center mt-12">
             {skillIcons.map(({ href, img, alt, target, aos }, index) => (
               <a

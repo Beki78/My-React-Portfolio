@@ -5,7 +5,10 @@ const Services = () => {
   return (
     <div>
       <div className="py-3 bg-slate-950 text-cyan-100 px-12 sm:px-24 md:px-32 xl:px-40 min-h-screen font-[Poppins]  text-sm">
-        <h1 className="text-4xl md:text-5xl font-semibold text-white  mt-72 text-center">
+        <h1
+          data-aos="fade-up"
+          className="text-4xl md:text-5xl font-semibold text-white  mt-72 text-center"
+        >
           Services <span className="text-purple-500">Offering</span>
         </h1>
         <div className="w-full mt-12 grid lg:grid-cols-4 m grid-cols-1 gap-10">
@@ -24,15 +27,22 @@ const Services = () => {
             >
               <div className="flex xl:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
                 <img
+                  data-aos={card.aos}
                   src={card.thumbnail}
                   alt={card.thumbnail}
                   className="lg:w-32 md:w-20 w-16"
                 />
                 <div className="lg:ms-5">
-                  <h1 className="text-start text-xl md:text-2xl font-bold">
+                  <h1
+                    data-aos={card.textAOS}
+                    className="text-start text-xl md:text-2xl font-bold"
+                  >
                     {card.title}
                   </h1>
-                  <p className="text-start text-purple-200 text-sm mt-3 font-normal">
+                  <p
+                    data-aos={card.textAOS}
+                     className="text-start text-purple-200 text-sm mt-3 font-normal"
+                  >
                     {card.desc}
                   </p>
                 </div>

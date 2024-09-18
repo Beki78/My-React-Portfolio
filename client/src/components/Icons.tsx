@@ -2,7 +2,6 @@ import React from "react";
 import footerGrid from "/src/public/footer-grid.svg";
 import { techs } from "../data/data";
 
-
 const TooltipIcon = ({ name, icon }) => {
   return (
     <div className="relative group inline-block mx-2">
@@ -29,7 +28,9 @@ const TechIcons = () => {
         />
       </div>
       {techs.map((tech) => (
-        <TooltipIcon key={tech.name} name={tech.name} icon={tech.icon} />
+        <div data-aos={tech.aos}>
+          <TooltipIcon key={tech.name} name={tech.name} icon={tech.icon} />
+        </div>
       ))}
     </div>
   );
