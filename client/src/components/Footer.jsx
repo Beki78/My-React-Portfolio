@@ -18,14 +18,12 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1
-          data-aos="fade-down"
           className="text-5xl font-bold text-center text-white lg:max-w-[45vw]"
         >
           Ready to take <span className="text-purple-400">your</span> digital
           presence to the <span className="text-purple-400">next level</span>?
         </h1>
         <p
-          data-aos="fade-down"
           className="text-white md:mt-10 my-5 text-center"
         >
           Reach out to me today and let&apos;s discuss how I can help you

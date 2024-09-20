@@ -29,7 +29,7 @@ const skillIcons = [
 const About = () => {
   return (
     <div>
-      <div className="bg-slate-950 pt-32 flex items-center flex-col lg:flex-row gap-7 md:gap-14 px-5 sm:px-16 md:px-32 lg:px-20 xl:px-80 font-[Poppins] pb-14">
+      <div className="bg-slate-950 pt-32 flex items-center flex-col lg:flex-row gap-7 md:gap-14 px-5 sm:px-16 md:px-32 lg:px-20 xl:px-40 2xl:px-60 font-[Poppins] pb-14">
         <div>
           <div className="blob"></div>
         </div>

@@ -2,8 +2,8 @@
 import { PinContainer } from "./ui/3d-pin";
 import { Tabs } from "../components/ui/tabs";
 import { dataFront, dataFull, dataMob } from "../data/data";
-import ButtonColor from "./ButtonColor";
-import { useNavigate } from "react-router-dom";
+// import ButtonColor from "./ButtonColor";
+// import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { MyContext } from "../context/state.jsx";
 
@@ -209,16 +209,16 @@ export function TabsDemo() {
       ),
     },
   ];
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className="relative  flex flex-col mx-auto w-full items-start justify-start">
       <Tabs tabs={tabs} />
       <div className="flex justify-center w-full py-7">
-        <ButtonColor
+        {/* <ButtonColor
           name=" &nbsp; &nbsp; View All Projects &nbsp; 🚀 &nbsp;  &nbsp;"
           func={() => navigate("/projects")}
-        />
+        /> */}
       </div>
     </div>
   );

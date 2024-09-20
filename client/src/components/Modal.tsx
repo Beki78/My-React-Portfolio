@@ -56,6 +56,7 @@ export const AnimatedModalDemo = () => {
                 className="max-h-96 w-full object-contain"
               />
             </div>
+
             <div className="flex justify-center gap-10 w-full pt-7">
               <div
                 onClick={handlePrev}
@@ -72,6 +73,9 @@ export const AnimatedModalDemo = () => {
                 <ArrowLongRightIcon className="h-10 w-10 text-purple-500" />
               </div>
             </div>
+            <p>
+              {currentImageIndex + 1}/{selectedItem.images.length}
+            </p>
           </div>
 
           <div className="flex justify-between items-center px-12 rounded-br-xl rounded-bl-xl bg-slate-900 h-16">

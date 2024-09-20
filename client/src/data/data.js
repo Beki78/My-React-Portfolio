@@ -20,6 +20,22 @@ import Photo8 from "../assets/haletascreenshot.jpg";
 import Photo9 from "../assets/Screenshot from 2024-09-18 15-40-52.png";
 import Photo10 from "../assets/Screenshot from 2024-09-18 16-14-57.png";
 import Photo11 from "../assets/Screenshot from 2024-09-18 16-18-55.png";
+import Photo12 from "../assets/Screenshot from 2024-09-20 22-48-54.png";
+import Photo13 from "../assets/Screenshot from 2024-09-20 22-49-03.png";
+import Photo14 from "../assets/Screenshot from 2024-09-20 22-54-46.png";
+import Photo15 from "../assets/Screenshot from 2024-09-20 22-55-01.png";
+import Photo16 from "../assets/Screenshot from 2024-09-20 22-55-16.png";
+import Photo17 from "../assets/Screenshot from 2024-09-20 23-08-39.png";
+import Photo18 from "../assets/Screenshot from 2024-09-20 23-08-39.png";
+import Photo19 from "../assets/Screenshot from 2024-09-20 23-08-50.png";
+import Photo20 from "../assets/Screenshot from 2024-09-20 23-10-09.png";
+import Photo21 from "../assets/Screenshot from 2024-09-20 23-17-28.png";
+import Photo22 from "../assets/Screenshot from 2024-09-20 23-18-05.png";
+import Photo23 from "../assets/Screenshot from 2024-09-20 23-18-16.png";
+import Photo24 from "../assets/Screenshot from 2024-09-20 23-27-34.png";
+import Photo25 from "../assets/Screenshot from 2024-09-20 23-27-51.png";
+import Photo26 from "../assets/Screenshot from 2024-09-20 23-28-12.png";
+import Photo27 from "../assets/Screenshot from 2024-09-20 23-28-25.png";
 
 export const testimonials = [
   {
@@ -188,7 +204,7 @@ export const dataFront = [
     title: "Hulu Clone",
     stack: "frontend",
     desc: "Frontend clone of the Hulu movie streaming website.",
-      longdesc: `"Hulu Clone" is a frontend project designed to replicate the Hulu movie streaming website. Built with React and styled using Tailwind CSS, this clone showcases a responsive and dynamic user interface that mimics the functionality and design of Hulu. It features a sleek layout for browsing and streaming content, providing users with a seamless experience similar to the original platform.`,
+    longdesc: `"Hulu Clone" is a frontend project designed to replicate the Hulu movie streaming website. Built with React and styled using Tailwind CSS, this clone showcases a responsive and dynamic user interface that mimics the functionality and design of Hulu. It features a sleek layout for browsing and streaming content, providing users with a seamless experience similar to the original platform.`,
     photo: Photo1,
     github: "https://github.com/Beki78/hulu-app",
     live: "https://66367e96669e3d282a3158f1--reliable-choux-c0e822.netlify.app/",
@@ -196,18 +212,14 @@ export const dataFront = [
       "https://skillicons.dev/icons?i=react",
       "https://skillicons.dev/icons?i=tailwind",
     ],
-    inProgress: false, 
-    images: [
-      Photo1,
-      Photo2,
-      Photo4
-    ]
+    inProgress: false,
+    images: [Photo12, Photo13, Photo1],
   },
   {
     title: "Begize Landing Page",
     stack: "frontend",
     desc: "A landing page to showcase and gather data",
-    longdesc: `"Begize Landing Page" is a frontend project designed to effectively showcase information and gather user data. Created with React and styled using Tailwind CSS, this landing page features a clean and engaging design, optimized for capturing user interactions and presenting content attractively. It is ideal for marketing purposes, lead generation, or as a starting point for further development.` ,
+    longdesc: `"Begize Landing Page" is a frontend project designed to effectively showcase information and gather user data. Created with React and styled using Tailwind CSS, this landing page features a clean and engaging design, optimized for capturing user interactions and presenting content attractively. It is ideal for marketing purposes, lead generation, or as a starting point for further development.`,
     photo: Photo2,
     github: "https://github.com/Beki78/Begize-Landing-page",
     live: "https://666c9f1da29f4eb9477ed74b--begizelandingpage1.netlify.app/",
@@ -216,6 +228,7 @@ export const dataFront = [
       "https://skillicons.dev/icons?i=tailwind",
     ],
     inProgress: false,
+    images: [Photo2, Photo14, Photo15, Photo16],
   },
 
   {
@@ -232,6 +245,7 @@ export const dataFront = [
       "https://skillicons.dev/icons?i=js",
     ],
     inProgress: false,
+    images: [Photot5],
   },
   {
     title: "Stop Watch",
@@ -247,6 +261,7 @@ export const dataFront = [
       "https://skillicons.dev/icons?i=javascript",
     ],
     inProgress: false,
+    images: [Photot7],
   },
   {
     title: "Unit Convertor",
@@ -262,6 +277,7 @@ export const dataFront = [
       "https://skillicons.dev/icons?i=js",
     ],
     inProgress: false,
+    images: [Photot6],
   },
 ];
 
@@ -272,7 +288,7 @@ export const dataFull = [
     desc: "A full inventory and ecommerce site for pharmacy",
     longdesc: `The "Pharmacy Whole Sell" project is a comprehensive web application designed for managing pharmacy inventory and facilitating e-commerce transactions. It enables pharmacies to efficiently track stock levels, manage pharmaceutical products, and handle online sales. The application features inventory management, e-commerce functionality, and user management with role-based permissions. Built with React for a dynamic UI, Tailwind CSS for modern styling, MySQL for database management, Django for backend operations, Redux for state management, and TypeScript for type safety, this project aims to provide a robust and user-friendly tool for pharmacies. It is currently in progress.`,
     photo: Photo9,
-    github: "https://github.com/Beki78/pharma-sphere",
+    github: "https://github.com/Beki78/pharma_sphere",
     live: "",
     technology: [
       "https://skillicons.dev/icons?i=react",
@@ -283,6 +299,7 @@ export const dataFull = [
       "https://skillicons.dev/icons?i=ts",
     ],
     inProgress: true,
+    images: [Photo17, Photo9, Photo18, Photo19, Photo20],
   },
   {
     title: "ConnectMe",
@@ -300,10 +317,11 @@ export const dataFull = [
       "https://skillicons.dev/icons?i=ts",
     ],
     inProgress: true,
+    images: [Photo11],
   },
   {
     title: "Music List",
-    stack: "Frontend",
+    stack: "Full-Stack",
     desc: "A music list that allows CRUD operation",
     longdesc: `The "Music List" project is a comprehensive music management application that enables users to perform CRUD (Create, Read, Update, Delete) operations on their music library. Users can add, view, edit, and delete their music entries, making it a versatile tool for managing personal music collections. The frontend is developed using React for a dynamic and interactive user interface, complemented by Tailwind CSS for sleek and responsive design. The application integrates with MongoDB for efficient data storage and Express.js for server-side operations, with Redux and TypeScript enhancing state management and type safety. .`,
     photo: Photo10,
@@ -318,6 +336,7 @@ export const dataFull = [
       "https://skillicons.dev/icons?i=ts",
     ],
     inProgress: false,
+    images: [Photo21, Photo22, Photo23, Photo10],
   },
   {
     title: "KMS School Web",
@@ -334,6 +353,7 @@ export const dataFull = [
       "https://skillicons.dev/icons?i=express",
     ],
     inProgress: true,
+    images: [Photo24, Photo25, Photo26, Photo27, Photo3],
   },
 
   {
@@ -351,6 +371,7 @@ export const dataFull = [
       "https://skillicons.dev/icons?i=express",
     ],
     inProgress: false,
+    images: [Photo4],
   },
 ];
 export const dataMob = [
@@ -361,12 +382,13 @@ export const dataMob = [
     longdesc: `"Haleta" is a frontend mobile application designed to streamline ambulance services. Built using React and Tailwind CSS, this app provides a user-friendly interface for accessing and managing ambulance services efficiently.`,
     photo: Photo8,
     github: "https://github.com/Beki78/haleta",
-    live: "https://myurlshorten.netlify.app/",
+    live: "https://drive.google.com/file/d/1-1cBvg4iMm57n1SOyfQ_1nW53bjOBsMj/view?usp=sharing",
     technology: [
       "https://skillicons.dev/icons?i=react",
       "https://skillicons.dev/icons?i=tailwind",
     ],
     inProgress: false,
+    images: [Photo8],
   },
 ];
 
@@ -377,7 +399,7 @@ export const dataAll = [
     desc: "A full inventory and ecommerce site for pharmacy",
     longdesc: `The "Pharmacy Whole Sell" project is a comprehensive web application designed for managing pharmacy inventory and facilitating e-commerce transactions. It enables pharmacies to efficiently track stock levels, manage pharmaceutical products, and handle online sales. The application features inventory management, e-commerce functionality, and user management with role-based permissions. Built with React for a dynamic UI, Tailwind CSS for modern styling, MySQL for database management, Django for backend operations, Redux for state management, and TypeScript for type safety, this project aims to provide a robust and user-friendly tool for pharmacies. It is currently in progress.`,
     photo: Photo9,
-    github: "https://github.com/Beki78/pharma-sphere",
+    github: "https://github.com/Beki78/pharma_sphere",
     live: "",
     technology: [
       "https://skillicons.dev/icons?i=react",
