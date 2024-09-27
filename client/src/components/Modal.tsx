@@ -33,15 +33,15 @@ export const AnimatedModalDemo = () => {
       currentImageIndex < selectedItem.images.length - 1
     ) {
       setCurrentImageIndex(currentImageIndex + 1);
-      setLoading(true); // Set loading when changing image
+      setLoading(true); 
     }
   };
 
   const handleImageLoad = () => {
-    setLoading(false); // Set loading to false when image is loaded
+    setLoading(false); 
   };
 
-  if (!selectedItem) return null; // Return nothing if no item is selected
+  if (!selectedItem) return null; 
 
   return (
     open && (
@@ -72,7 +72,7 @@ export const AnimatedModalDemo = () => {
                 src={selectedItem.images[currentImageIndex]}
                 alt={selectedItem.title}
                 className="max-h-96 w-full object-contain"
-                onLoad={handleImageLoad} // Trigger loading state on load
+                onLoad={handleImageLoad} 
               />
             </div>
 

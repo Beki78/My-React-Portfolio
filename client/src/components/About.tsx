@@ -1,6 +1,5 @@
 import React from "react";
-import {skillIcons} from "../data/data"
-
+import { skillIcons } from "../data/data";
 
 const About = () => {
   return (
@@ -29,7 +28,7 @@ const About = () => {
                 target={target}
                 rel="noopener noreferrer"
                 className="text-2xl"
-                data-aos = {aos}
+                data-aos={aos}
               >
                 <img
                   src={img}

@@ -1,4 +1,4 @@
-import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 
 // eslint-disable-next-line react/prop-types

@@ -1,4 +1,4 @@
-import { FlipWords } from "../components/ui/flip-words";
+import { FlipWords } from "./ui/flip-words";
 
 const HeroWord = () => {
   const words = ["better", "flexible", "beautiful", "modern"];
