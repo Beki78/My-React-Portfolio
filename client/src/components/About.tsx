@@ -1,30 +1,6 @@
 import React from "react";
-import { Link } from "react-scroll";
+import {skillIcons} from "../data/data"
 
-const skillIcons = [
-  {
-    href: "https://www.linkedin.com/in/bereketgetachew/",
-    img: "https://skillicons.dev/icons?i=linkedin",
-    alt: "LinkedIn",
-    target: "_blank",
-    aos : "fade-right"
-
-  },
-  {
-    href: "https://github.com/Beki78/",
-    img: "https://skillicons.dev/icons?i=github",
-    alt: "GitHub",
-    target: "_blank",
-    aos: "fade-up",
-  },
-  {
-    href: "mailto:your.bakiget78@gmail.com",
-    img: "https://skillicons.dev/icons?i=gmail",
-    alt: "Email",
-    target: "_blank",
-    aos: "fade-left",
-  },
-];
 
 const About = () => {
   return (

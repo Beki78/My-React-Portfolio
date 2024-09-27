@@ -6,7 +6,6 @@ import Home from "./pages/Home.tsx";
 import ErrorPage from "./pages/ErrorPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Project from "./pages/Project.tsx";
 import {MyProvider} from "./context/state.jsx"
 
 AOS.init({
@@ -19,10 +18,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "/projects",
-    element: <Project />,
   },
 ]);
 

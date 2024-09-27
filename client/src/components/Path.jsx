@@ -1,6 +1,4 @@
 import { Timeline } from "./ui/timeline";
-import proj1 from "../assets/Screenshot from 2024-09-15 14-17-15.png";
-import proj2 from "../assets/Screenshot from 2024-09-15 15-11-56.png";
 
 const Path = () => {
   const data = [
@@ -15,7 +13,7 @@ const Path = () => {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src={proj1}
+              src="https://res.cloudinary.com/dhkwleefa/image/upload/v1727426891/Screenshot_from_2024-09-15_15-11-56_irkgxu.png"
               alt="startup template"
               width={500}
               height={500}
@@ -23,7 +21,7 @@ const Path = () => {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
-              src={proj2}
+              src="https://res.cloudinary.com/dhkwleefa/image/upload/v1727426890/Screenshot_from_2024-09-15_14-17-15_pwb6tq.png"
               alt="startup template"
               width={500}
               height={500}
@@ -31,6 +29,7 @@ const Path = () => {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
+          
         </div>
       ),
     },
@@ -92,7 +91,7 @@ const Path = () => {
               alt="feature template"
               width={500}
               height={500}
-              data-aos="fade-up"  
+              data-aos="fade-up"
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>

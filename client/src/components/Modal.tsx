@@ -11,21 +11,34 @@ export const AnimatedModalDemo = () => {
   const refModal = useRef(null);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [loading, setLoading] = useState(true); // Loading state
+
   const close = (e) => {
     if (refModal.current && refModal.current === e.target) {
       handleCloseModal();
+      setCurrentImageIndex(0); // Reset index on close
     }
   };
-   const handlePrev = () => {
+
+  const handlePrev = () => {
     if (currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
+      setLoading(true); // Set loading when changing image
     }
   };
 
   const handleNext = () => {
-    if (selectedItem.images && currentImageIndex < selectedItem.images.length - 1) {
+    if (
+      selectedItem.images &&
+      currentImageIndex < selectedItem.images.length - 1
+    ) {
       setCurrentImageIndex(currentImageIndex + 1);
+      setLoading(true); // Set loading when changing image
     }
+  };
+
+  const handleImageLoad = () => {
+    setLoading(false); // Set loading to false when image is loaded
   };
 
   if (!selectedItem) return null; // Return nothing if no item is selected
@@ -48,12 +61,18 @@ export const AnimatedModalDemo = () => {
 
           <div className="p-8 max-h-[90vh] overflow-y-auto">
             <h1 className="text-xl font-bold mb-4">{selectedItem.title}</h1>
-            <p className="py-2 pb-8 ">{selectedItem.longdesc}</p>
-            <div>
+            <p className="py-2 pb-8">{selectedItem.longdesc}</p>
+            <div className="relative">
+              {loading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                  <p className="text-white">Loading...</p>
+                </div>
+              )}
               <img
                 src={selectedItem.images[currentImageIndex]}
                 alt={selectedItem.title}
                 className="max-h-96 w-full object-contain"
+                onLoad={handleImageLoad} // Trigger loading state on load
               />
             </div>
 
