@@ -6,7 +6,7 @@ export const MyContext = createContext();
 // eslint-disable-next-line react/prop-types
 export const MyProvider = ({ children }) => {
   const [open, setOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null); // Store the selected item
+  const [selectedItem, setSelectedItem] = useState(null); 
 
   const handleModal = (item) => {
     setSelectedItem(item); // Set the selected item
