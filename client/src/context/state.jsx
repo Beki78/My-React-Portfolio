@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-// Create the context
+
 export const MyContext = createContext();
 
 // eslint-disable-next-line react/prop-types
@@ -9,8 +9,9 @@ export const MyProvider = ({ children }) => {
   const [selectedItem, setSelectedItem] = useState(null); 
 
   const handleModal = (item) => {
-    setSelectedItem(item); // Set the selected item
-    setOpen(true); // Open the modal
+    setSelectedItem(item); 
+    selected item
+    setOpen(true); 
   };
 
   const handleCloseModal = () => {
