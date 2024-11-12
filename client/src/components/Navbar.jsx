@@ -89,10 +89,12 @@ const Navbar = () => {
           onClose={() => setMobileMenuOpen(false)}
         >
           <div className="fixed inset-0 z-10" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto shadow-cyan-50 shadow-sm bg-opacity-50 backdrop-blur-lg bg-slate-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-[1000] w-full overflow-y-auto shadow-cyan-50 shadow-sm bg-opacity-50 backdrop-blur-lg bg-slate-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <RouterLink to="/" className="-m-1.5 p-1.5">
-                <h1 className="text-xl font-bold uppercase">Bereket G.</h1>
+                <h1 className="text-xl font-bold uppercase text-purple-200">
+                  Bereket G.
+                </h1>
               </RouterLink>
               <button
                 type="button"

@@ -215,6 +215,27 @@ export const dataFront = [
       "https://res.cloudinary.com/dhkwleefa/image/upload/v1727426892/Screenshot_from_2024-09-20_22-55-16_u1ldxi.png",
     ],
   },
+  {
+    title: "Haleta Landing Page",
+    stack: "frontend",
+    desc: "A landing page for a health-tech startup",
+    longdesc: `"Haleta Landing Page" is a frontend project designed to effectively showcase information and gather user data. Created with NextJs and styled using Tailwind CSS, this landing page features a clean and engaging design, optimized for capturing user interactions and presenting content attractively. It is ideal for marketing purposes, lead generation, or as a starting point for further development.`,
+    photo:
+      "https://res.cloudinary.com/dhkwleefa/image/upload/v1731434206/ppcza4zqpkfhxj3vdese.png",
+    github: "https://github.com/Beki78/Haleta-Landing-Page",
+    live: "https://haletamedicalservices.vercel.app/",
+    technology: [
+      "https://skillicons.dev/icons?i=next",
+      "https://skillicons.dev/icons?i=tailwind",
+    ],
+    inProgress: false,
+    images: [
+      "https://res.cloudinary.com/dhkwleefa/image/upload/v1731434206/ppcza4zqpkfhxj3vdese.png",
+      "https://res.cloudinary.com/dhkwleefa/image/upload/v1731434207/ivos7xmhvrhinadm2trb.png",
+      "https://res.cloudinary.com/dhkwleefa/image/upload/v1731434203/jp4uejgdm8txkxewnc6l.png",
+      "https://res.cloudinary.com/dhkwleefa/image/upload/v1731434203/kkyaypy6jmsflotbvmli.png",
+    ],
+  },
 
   {
     title: "Calculator",
@@ -346,6 +367,31 @@ export const dataFull = [
       "https://res.cloudinary.com/dhkwleefa/image/upload/v1727426896/Screenshot_from_2024-09-20_23-18-05_zdqkvg.png",
       "https://res.cloudinary.com/dhkwleefa/image/upload/v1727426895/Screenshot_from_2024-09-20_23-18-16_dbgi2r.png",
       "https://res.cloudinary.com/dhkwleefa/image/upload/v1727426895/Screenshot_from_2024-09-20_23-17-28_r6d5vd.png",
+    ],
+  },
+  {
+    title: "Music List",
+    stack: "Full-Stack",
+    desc: "A music list that allows CRUD operation",
+    longdesc: `The "Music List" project is a comprehensive music management application that enables users to perform CRUD (Create, Read, Update, Delete) operations on their music library. Users can add, view, edit, and delete their music entries, making it a versatile tool for managing personal music collections. The frontend is developed using React for a dynamic and interactive user interface, complemented by Tailwind CSS for sleek and responsive design. The application integrates with MongoDB for efficient data storage and Express.js for server-side operations, with Redux and TypeScript enhancing state management and type safety. .`,
+    photo:
+      "https://res.cloudinary.com/dhkwleefa/image/upload/v1731438745/velycurl5gqynmfmhi0u.png",
+    github: "https://github.com/Beki78/test-project",
+    live: "https://addissoftware-music-studio.netlify.app/",
+    technology: [
+      "https://skillicons.dev/icons?i=react",
+      "https://skillicons.dev/icons?i=tailwind",
+      "https://skillicons.dev/icons?i=mongo",
+      "https://skillicons.dev/icons?i=express",
+      "https://skillicons.dev/icons?i=redux",
+      "https://skillicons.dev/icons?i=ts",
+    ],
+    inProgress: false,
+    images: [
+      "https://res.cloudinary.com/dhkwleefa/image/upload/v1731438745/velycurl5gqynmfmhi0u.png",
+      "https://res.cloudinary.com/dhkwleefa/image/upload/v1731438745/xs8lnzaehgiiaxb2ahyf.png",
+      "https://res.cloudinary.com/dhkwleefa/image/upload/v1731438745/d3p2yxwkez7gjtaixkwl.png",
+      
     ],
   },
   {
