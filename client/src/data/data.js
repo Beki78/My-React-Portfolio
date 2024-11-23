@@ -390,7 +390,9 @@ export const dataFull = [
     images: [
       "https://res.cloudinary.com/dhkwleefa/image/upload/v1731438745/velycurl5gqynmfmhi0u.png",
       "https://res.cloudinary.com/dhkwleefa/image/upload/v1731438745/xs8lnzaehgiiaxb2ahyf.png",
+      
       "https://res.cloudinary.com/dhkwleefa/image/upload/v1731438745/d3p2yxwkez7gjtaixkwl.png",
+      
       
     ],
   },

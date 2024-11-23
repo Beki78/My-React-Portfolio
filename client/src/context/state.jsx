@@ -10,7 +10,6 @@ export const MyProvider = ({ children }) => {
 
   const handleModal = (item) => {
     setSelectedItem(item); 
-    selected item
     setOpen(true); 
   };
 

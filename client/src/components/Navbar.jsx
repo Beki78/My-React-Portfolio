@@ -76,7 +76,7 @@ const Navbar = () => {
               name="&nbsp; &nbsp; Resume &nbsp; 📝 &nbsp; &nbsp;"
               func={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1ZUmr_HhnuSG79V7fTT1Z60EO3orYC9bU/view?usp=sharing"
+                  "https://drive.google.com/file/d/1cgMRwjRRTinmY-JRuPYYI1p6y9I14P6S/view?usp=sharing"
                 )
               }
             />

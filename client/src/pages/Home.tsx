@@ -7,33 +7,36 @@ import About from "../components/About.tsx";
 import Card from "../components/Card.jsx";
 import { PuffLoader } from "react-spinners";
 import Personal from "../components/Personal.jsx";
-import Services from "../components/Services.jsx"
-import Footer from "../components/Footer.jsx"
+import Services from "../components/Services.jsx";
+import Footer from "../components/Footer.jsx";
+import CVICON from "../assets/cv.png"
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    // Set a timer to start fade-out effect after 3 seconds
     const timer = setTimeout(() => {
       setFadeOut(true);
     }, 1000);
-
-    // Clear the timer if the component is unmounted
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     if (fadeOut) {
-      // Set another timer to hide the spinner after the fade-out duration
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 500); // match this duration with your CSS transition duration
-
+      }, 500);
       return () => clearTimeout(timer);
     }
   }, [fadeOut]);
+
+  const handleButtonClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1cgMRwjRRTinmY-JRuPYYI1p6y9I14P6S/view?usp=sharing",
+      "_blank"
+    );
+  };
 
   return (
     <div>
@@ -74,6 +77,15 @@ const Home = () => {
           <Element name="footer">
             <Footer />
           </Element>
+
+          {/* Fixed Button */}
+          <button
+            onClick={handleButtonClick}
+            className="flex lg:hidden fixed bottom-1 right-1 text-white p-3 transition duration-300"
+            style={{ zIndex: 1000 }}
+          >
+            <img src={CVICON} alt="CV Icon" className="w-14" />
+          </button>
         </>
       )}
     </div>
